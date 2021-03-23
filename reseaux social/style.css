@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+html {
+    background-color: #f5f5f5
+}
+a{
+    text-decoration: none;
+}
+body {
+  width: 100%;
+}
+/************header***************/
+.header {
+    width: 100%;
+    height: auto;
+    background-color: rgba(44,62,80,1);
+    padding-bottom: 10px;
+}
+.header-logo{
+    font-family: roboto,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff ;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header-nav {
+    height: auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+
+.header-nav a {
+    height: auto;
+    text-decoration: none;
+    font-family: roboto,sans-serif;
+    font-size: 14px; ;
+    color: rgba(255,255, 255, 0.6);
+    text-align: center;
+    padding: 0px 15px;
+}
+.header-nav a:hover{
+    color:#ffffff;
+}
+
+
+/*************main*************/
+.aside-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height:100px;
+    background-color:white ,transparent;
+    
+}
+.aside-left a {
+    font-family: roboto,sans-serif;
+    font-size: 12px;
+    height: 28px;
+    width: 180px;
+    margin-left: 20px;
+    background-color:white ,transparent;
+    text-decoration: none;
+    color: black;
+    padding-top: 7px;
+    padding-bottom: auto;
+}
+.aside-left a:hover {
+    background-color: white;
+    border: solid 1px ;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-weight: bold;
+}
+.aside-left a::before {
+    display: inline-block;
+    content: " ";
+    width: 11px;
+    height: 9px;
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2px;
+    margin-right: 20px;
+    background-color:white ,transparent;
+    
+}
+.actu{
+    margin-top: 10px;
+
+}
+.actu::before {
+    background-image: url(img/maison.svg);
+}
+.messages::before {
+    background-image: url(img/mail.svg);
+}
+.events::before {
+    background-image: url(img/calendrier.svg)
+}
+.groups {
+    margin-top: 10px;
+}
+.groups::before {
+    background-image: url(img/friends.svg);
+}
+.friends::before {
+    background-image: url(img/friends.svg);
+}
+.article{
+    width: auto;
+    height: auto;
+    background-color:#FFFF;
+    margin: 10px 20px 20px 20px;
+    border: 1px solid ;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: -10px 5px 8px 1px rgba(0,0,0,0.23);
+}
+.face {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+}
+.pseudo {
+    font-family: roboto,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 50px;
+}
+.time {
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: black;
+    opacity: 0.38;
+}
+.post-img {
+    padding-bottom: 10px;
+    width: 100%;
+    height:auto ;
+    overflow: hidden;
+}
+.paragraphe {
+    font-family: roboto,sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+.hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;;
+ 
+}
+.footer{
+    width: auto;
+    height:auto  ;
+    display: flex;
+    flex-basis: content;
+    justify-content: space-between;
+
+}
+
+.like {
+    display: flex;
+    padding: 10px;
+}
+.likeimg a{
+    opacity: 50%;
+    padding-right: 5px;
+}
+.likeimg a:hover {
+    opacity: 100%;
+}
+.numberlike {
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    color: #BDBDBD;
+    text-align: center;
+    padding-top: 3px;
+}
+.comments {
+    display: flex;
+    padding: 10px;
+}
+.commentsimg  {
+    opacity: 50%;
+    padding-right: 5px;
+}
+.commentsimg:hover {
+    opacity: 100%;
+}
+.numbercomments {
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.hrblack {
+    width: auto;
+    height: 1px;
+    background-color: black;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+ h2 {
+    font-family: roboto, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 25px;
+}
+.aside-right {
+   display: flex;
+    margin-left: 25px;
+  }
+
+  .friends-name {
+      margin-left: 10px ;
+      font-family: roboto , sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+  .numberoffriends {
+      margin-left: 10px ;
+      font-family: roboto,sans-serif;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.65);
+      margin-bottom: 15px;
+  }
+  .add {
+      margin-left: 13px;
+      font-family: roboto, sans-serif;
+      font-size: 12px;
+
+  }
+  .hugio {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px 10px 0px ;
+  }
+  .add::before {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 15px;
+    background-image: url(img/addfriends.svg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    
+}
+@media only screen and (min-width: 543px) {
+    .post-img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height:auto
+
+    }
+@media only screen and (min-width: 850px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width:auto;
+        height: 65px;
+    }
+    .header-logo{
+        float: left;
+        padding-left: 25px;
+    }
+    .header-nav{
+        float: right;
+        padding: 25px 0px;
+    }
+    .header-nav a {
+        padding: 0px 25px;
+    }
+    main {
+        display: flex ;
+        justify-content: space-between
+    }
+    .aside-left {
+        display: flex;
+        width: 180px;
+        height: 170px;
+
+    }
+    .post{
+        display: flex;
+        width: 500px;
+        height: auto;
+        flex-direction: column;
+    
+    }
+    .post-img{
+        display: flex;
+        width: auto;
+        height:auto;
+        overflow:hidden
+    }
+    h2 {
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .hrblack {
+        display: flex;
+        margin-left: 25px;
+    }
+    .groups {
+        margin: 0;
+    }
+    .hugio {
+        display: flex;
+        flex-direction: column;
+    }
+    .asider {
+        display: flex;
+        width: 304px;
+        height:354px;
+        margin-right: 50px;
+        
+    }
